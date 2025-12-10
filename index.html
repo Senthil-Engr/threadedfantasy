@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Threaded Fantasy Boutique</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo"> <img src="./logo copy.png" alt=""> Threaded<span>Fantasy</span></div>
+      <nav id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#menu" class="nav-link">Services</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="section hero-section">
+      <div class="hero-content">
+        <h1>Handcrafted Bangles for Every Moment</h1>
+        <p>
+          Discover elegant, handcrafted bangles that blend tradition with modern
+          design. Perfect for weddings, festivals, and everyday sparkle.
+        </p>
+        <button class="btn-primary" onclick="scrollToSection('shop')">
+          Explore Collection
+        </button>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./young-indian-woman-wearing-sari.jpg"
+          alt="Bangle collection"
+        />
+      </div>
+    </section>
+
+    <!-- COMPANY DETAILS SECTION -->
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <h2>About Our Boutique</h2>
+        <p>
+          At <strong>BangleBliss Boutique</strong>, we specialize exclusively in
+          bangles – from delicate daily wear to statement pieces for grand
+          occasions.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Handpicked Designs</h3>
+          <p>
+            Every bangle in our collection is curated with attention to detail –
+            from finish and fit to the way it shines under light.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Crafted with Love</h3>
+          <p>
+            Our artisans combine traditional techniques with contemporary
+            aesthetics, creating pieces that feel timeless yet fresh.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Made Just for You</h3>
+          <p>
+            We offer multiple sizes, finishes, and custom sets, so you can mix &
+            match pieces that reflect your personal style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP / BANGLE LIST SECTION -->
+    <section id="shop" class="section shop-section">
+      <div class="section-heading">
+        <h2>Our Bangle Collection</h2>
+        <p>Browse some of our most loved bangle sets.</p>
+      </div>
+
+      <div class="bangle-grid">
+        <!-- CARD 1 -->
+        <article class="bangle-card">
+          <div class="bangle-image-wrapper">
+            <img
+              src="./img1.jpg"
+              alt="Classic gold bangle set"
+            />
+          </div>
+          <div class="bangle-info">
+            <h3>Classic Gold Glow</h3>
+            <p>
+              Minimalist gold-tone bangles perfect for everyday elegance.
+            </p>
+            <span class="price">₹899</span>
+            <button class="btn-outline">View Details</button>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="bangle-card">
+          <div class="bangle-image-wrapper">
+            <img
+              src="./img2.jpg"
+              alt="Bridal bangle set"
+            />
+          </div>
+          <div class="bangle-info">
+            <h3>Bridal Royal Set</h3>
+            <p>
+              Intricate bridal bangle set with stones and detailed carvings.
+            </p>
+            <span class="price">₹2,499</span>
+            <button class="btn-outline">View Details</button>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="bangle-card">
+          <div class="bangle-image-wrapper">
+            <img
+              src="./img3.jpg"
+              alt="Colorful glass bangles"
+            />
+          </div>
+          <div class="bangle-info">
+            <h3>Festive Glass Stack</h3>
+            <p>
+              Vibrant glass bangles in rich hues – perfect for festive looks.
+            </p>
+            <span class="price">₹599</span>
+            <button class="btn-outline">View Details</button>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="bangle-card">
+          <div class="bangle-image-wrapper">
+            <img
+              src="./img4.jpg"
+              alt="Pearl edged bangles"
+            />
+          </div>
+          <div class="bangle-info">
+            <h3>Pearl Edge Charm</h3>
+            <p>
+              Metal bangles with pearl accents for a soft, sophisticated look.
+            </p>
+            <span class="price">₹1,299</span>
+            <button class="btn-outline">View Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MENU / EXTRA INFO SECTION -->
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <h2>Services</h2>
+        <p>
+          More ways to experience BangleBliss – choose what suits you best.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Custom Bangle Sets</h3>
+          <p>
+            Build your own stack – choose colors, finishes, and sizes. Perfect
+            for gifting or matching outfits.
+          </p>
+        </div>
+        <div class="menu-card">
+          <h3>Size Guide Help</h3>
+          <p>
+            Not sure about your bangle size? Reach out and we’ll guide you with
+            simple tips and measurements.
+          </p>
+        </div>
+        <div class="menu-card">
+          <h3>Gift Packaging</h3>
+          <p>
+            Add premium gift boxes, handwritten notes, and curated bangle sets
+            for special occasions.
+          </p>
+        </div>
+      </div>
+
+      <!-- SIMPLE CONTACT FORM -->
+      <div class="contact-box">
+        <h3>Stay in Touch</h3>
+        <p>Leave your email to get updates on new collections and offers.</p>
+        <form id="newsletter-form">
+          <input
+            type="email"
+            id="email-input"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn-primary">Notify Me</button>
+        </form>
+        <p id="form-message" class="form-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Designs Destiny. All rights reserved.</p>
+      <p class="footer-tagline">Made with ♥ for bangle lovers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
